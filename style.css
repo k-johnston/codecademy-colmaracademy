@@ -19,7 +19,7 @@ header {
   background-color: white;
   opacity: 1;
   z-index: 5;
-  border-bottom: thin solid #001472;
+  border-bottom: thin solid #000000;
 }
 
 .logo {
@@ -44,20 +44,21 @@ header {
   padding-left: 6px;
 }
 
-nav {
+ul {
   display: inline-flex;
   justify-content: flex-end;
   align-items: flex-end;
+  align-content: flex-start;
+  flex-wrap: nowrap;
   padding-right: 16px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
-nav h5 {
+li {
   display: inline-block;
   padding-right: 16px;
-  font-size: 16px;
-  width: 100%;
+  font-size: 10px;
   font-weight: normal;
 }
 
@@ -79,7 +80,7 @@ nav h5 {
   width: 100%;
   height: auto;
   padding-top: 64px;
-  background-color: #8298FF;
+  background-color: #FFF8DD;
 }
 
 div.starthereimg {
@@ -101,19 +102,19 @@ img.starthereimg {
   justify-content: flex-start;
   width: 30%;
   padding-top: 128px;
-  padding-left: 16px;
+  padding-right: 40px;
 }
 
-h1 .startheretext {
-  color: #001472;
+.startheretext h1 {
+  color: #5C1D53;
 }
 
-h3 .startheretext {
-  color: #001472;
+.startheretext h3 {
+  color: #121721;
 }
 
 .button {
-  background-color: #FFB400;
+  background-color: maroon;
   border-radius: 10px;
 }
 
@@ -130,7 +131,7 @@ h3 .startheretext {
   display: inline-flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #AFBDFF;
+  background-color: #F0F1EF;
   padding-bottom: 40px;
 }
 
@@ -161,6 +162,7 @@ h3 .startheretext {
 .leftarticletext h2 {
   margin-bottom: 24px;
   margin-top: 0px;
+  color: #482633;
 }
 
 .leftarticletext p {
@@ -176,7 +178,7 @@ caption {
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
-  border-left: thin solid #8298FF;
+  border-left: thin solid #CCD1C6;
   width: 423px;
   height: auto;
   padding-top: 32px;
@@ -186,21 +188,21 @@ caption {
 .article1 {
   display: inline-flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 483px;
   height: 156px;
-  border-bottom: thin solid #8298FF;
+  border-bottom: thin solid #CCD1C6;
 }
 
 .article2 {
   display: inline-flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 483px;
   height: 168px;
-  border-bottom: thin solid #8298FF;
+  border-bottom: thin solid #CCD1C6;
 }
 
 .article3 {
@@ -210,11 +212,8 @@ caption {
   align-items: flex-start;
   width: 483px;
   height: 168px;
-  border-bottom: thin solid #8298FF;
-}
-
-.article3 {
-  background-color: #8298FF;
+  border-bottom: thin solid #CCD1C6;
+  background-color: #CCD1C6;
 }
 
 .article1img img {
@@ -253,11 +252,11 @@ caption {
 }
 
 .rightarticle a {
-  color: skyblue;
+  color: maroon;
 }
 
 .rightarticle h4 {
-
+  color: #3B272E;
 }
 
 /* learning section */
@@ -268,7 +267,7 @@ caption {
   align-items: center;
   width: 100%;
   padding-bottom: 32px;
-  background-color: teal;
+  background-color: #FFF8DD;
 
 }
 
@@ -276,6 +275,7 @@ caption {
   text-align: center;
   margin-top: 32px;
   margin-bottom: 32px;
+  color: #482633;
 }
 
 .classes {
@@ -319,6 +319,7 @@ padding-top: 0px;
 
  .classes h5 {
   margin-top: 16px;
+  color: #3B2726;
 }
 
 .classes h6 {
@@ -338,13 +339,14 @@ padding-top: 0px;
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: #AFBDFF;
+  background-color: #F0F1EF;
   padding-bottom: 32px;
 }
 
 .thesis h2 {
   margin-top: 32px;
   margin-bottom: 32px;
+  color: #482633;
 }
 
 .theses {
@@ -380,6 +382,7 @@ video {
  .videotext h4 {
    padding-top: 0px;
    margin-top: 0px;
+   color: #3B2726;
 }
 
 .videotext p {
@@ -402,7 +405,7 @@ video {
 }
 
 .rightthesis1 {
-  background-color: #8298FF;
+  background-color: #CCD1C6;
 }
 
 .rightthesis1img img {
@@ -432,7 +435,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-top: thin solid #001472;
+  border-top: thin solid #000000;
 }
 
 .copyright {
