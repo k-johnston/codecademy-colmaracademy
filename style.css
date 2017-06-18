@@ -22,6 +22,10 @@ header {
   border-bottom: thin solid #000000;
 }
 
+.svg {
+  display: none;
+}
+
 .logo {
   display: inline-flex;
   justify-content: flex-start;
@@ -268,7 +272,10 @@ caption {
   width: 100%;
   padding-bottom: 32px;
   background-color: #FFF8DD;
+}
 
+.mobile {
+  display: none;
 }
 
 .startlearning h2 {
@@ -311,7 +318,7 @@ caption {
 }
 
 .class1text, .class2text, .class3text, .class4text, .class5text, .class6text {
-padding-top: 0px;
+  padding-top: 0px;
   padding-left: 16px;
   margin-bottom: 24px;
   height: 150px;
@@ -325,10 +332,6 @@ padding-top: 0px;
 .classes h6 {
   margin-top: 8px;
   margin-bottom: 8px;
-}
-
-.classes p {
-
 }
 
 /* thesis section */
@@ -385,9 +388,6 @@ video {
    color: #3B2726;
 }
 
-.videotext p {
-}
-
 .rightthesis {
   width: 423px;
   height: 336px;
@@ -420,14 +420,6 @@ video {
   height: 136px;
 }
 
-.rightthesis h5 {
-
-}
-
-.rightthesis p {
-
-}
-
 /* footer */
 
 footer {
@@ -446,8 +438,237 @@ footer {
   padding-right: 16px;
 }
 
-footer p {
+/* mobile */
+@media only screen and (max-width: 1024px) {
 
+.logo {
+  display: none;
 }
 
-/* mobile */
+ul {
+  display: none;
+}
+
+header {
+  position: static;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.svg {
+  display: inline-block;
+  width: 100%;
+}
+
+.starthere {
+  flex-direction: column;
+  padding-top: 0px;
+}
+
+div.starthereimg {
+  width: 100%;
+  padding: 0px;
+}
+
+img.starthereimg {
+  height: 180px;
+}
+
+.startheretext {
+  padding: 32px 0px 32px 16px;
+  width: 90%;
+}
+
+.startheretext h1 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.button {
+  width: 100%;
+}
+
+.button p {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.articles {
+  padding-bottom: 32px;
+}
+
+.leftarticle {
+  display: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.rightarticle {
+  width: 100%;
+  padding: 16px 16px 32px 16px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.article1 {
+  width: 100%;
+  height: auto;
+  border: medium none #F0F1EF;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.article2 {
+  width: 100%;
+  height: auto;
+  border: medium none #F0F1EF;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.article3 {
+  width: 100%;
+  height: auto;
+  border: medium none #F0F1EF;
+  background-color: #F0F1EF;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.article1img {
+  margin: 0px;
+  width: 90%;
+  height: 272px;
+}
+
+.article2img {
+  margin: 16px 0px 0px 0px;
+  width: 90%;
+    height: 272px;
+}
+
+.article3img {
+  margin: 16px 0px 0px 0px;
+  width: 90%;
+    height: 272px;
+}
+
+.article1img img {
+  width: 100%;
+    height: 272px;
+  padding-top: 0px;
+  padding-right: 0px;
+}
+
+.article2img img {
+  width: 100%;
+  height: 272px;
+  padding-top: 0px;
+  padding-right: 0px;
+}
+
+.article3img img {
+  width: 100%;
+  height: 272px;
+  padding-top: 0px;
+  padding-right: 0px;
+}
+
+.article1text {
+  padding-left: 16px;
+  font-size: 16px;
+}
+
+.article2text {
+  padding-left: 16px;
+  font-size: 16px;
+}
+
+.article3text {
+  padding-left: 16px;
+  font-size: 16px;
+}
+
+.startlearning {
+  padding-bottom: 32px;
+}
+
+.startlearning h2 {
+  margin-bottom: 16px;
+}
+
+.classes {
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: nowrap column;
+}
+
+.mobile {
+  display: inline;
+}
+
+.mobile ul {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.mobile li {
+  padding: 16px 0px 16px 16px;
+  font-size: 20px;
+  color: #3B2726;
+}
+
+.class1, .class2, .class3, .class4, .class5, .class6 {
+  display: none;
+}
+
+ .thesis {
+   padding-bottom: 24px;
+ }
+
+ .theses {
+   justify-content: center;
+ }
+
+ .leftthesis {
+   width: 100%;
+ }
+
+ video {
+   width: 100%;
+   padding: 0px;
+ }
+
+.videotext, .videotext h4, .rightthesis {
+  display: none;
+}
+
+footer {
+  justify-content: flex-start;
+}
+
+.copyright {
+  padding: 16px 0px 16px 16px;
+}
+
+.terms {
+  display: none;
+}
+
+
+/* todo: svg img in htmle and css desktop display:none mobile display: Y*/
